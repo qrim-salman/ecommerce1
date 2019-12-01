@@ -3,10 +3,13 @@
 // User authentication routes
 Auth::routes();
 
+Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback');
+
 // Admin authentication routes
-Route::get('/login/admin', 'Auth\LoginController@showAdminLoginForm')->name('admin.login');
-Route::post('/login/admin', 'Auth\LoginController@adminLogin');
-Route::post('/logout/admin', 'Auth\LoginController@adminLogout')->name('admin.logout');
+Route::get('/login/admin', 'Auth\Admin\AuthController@showAdminLoginForm')->name('admin.login');
+Route::post('/login/admin', 'Auth\Admin\AuthController@adminLogin');
+Route::post('/logout/admin', 'Auth\Admin\AuthController@adminLogout')->name('admin.logout');
 
 // App routes
 include base_path("routes/backend.php");

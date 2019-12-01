@@ -27,7 +27,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -37,43 +37,5 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
-        $this->middleware('guest:admin')->except('adminLogout');
-    }
-
-    /*
-    * ----------------------------------------------------------
-    * Admin Authenctication section
-    * ----------------------------------------------------------
-    */
-
-    // show admin login form
-    public function showAdminLoginForm()
-    {
-        return view('auth.login', ['url' => 'admin']);
-    }
-
-    // admin login functionality
-    public function adminLogin(Request $request)
-    {
-        $this->validate($request, [
-            'email' => 'required|email',
-            'password' => 'required|min:8'
-        ]);
-
-        if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password, 'is_active' => 1], $request->get('remember'))) {
-            return redirect()->intended(route('dashboard'));
-        }
-
-        return back()->withInput($request->only('email', 'remember'));
-    }
-
-    // admin logout functionality
-    public function adminLogout(Request $request)
-    {
-        Auth::guard('admin')->logout();
-        $request->session()->flush();
-        $request->session()->regenerate();
-
-        return redirect()->guest(route('admin.login'));
     }
 }

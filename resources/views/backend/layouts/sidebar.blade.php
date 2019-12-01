@@ -16,31 +16,25 @@
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
                         <i class="mdi mdi-format-list-bulleted"></i>
-                        <span class="hide-menu">Manajemen Transaksi</span>
+                        <span class="hide-menu">Transaksi</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('item-management') }}" aria-expanded="false">
                         <i class="mdi mdi-format-list-bulleted"></i>
-                        <span class="hide-menu">Manajemen Barang</span>
+                        <span class="hide-menu">Barang</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
                         <i class="mdi mdi-format-list-bulleted"></i>
-                        <span class="hide-menu">Komentar User</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                        <i class="mdi mdi-format-list-bulleted"></i>
-                        <span class="hide-menu">Manajemen Laporan</span>
+                        <span class="hide-menu">Laporan</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('user-management') }}" aria-expanded="false">
                         <i class="mdi mdi-account-network"></i>
-                        <span class="hide-menu">Manajemen User</span>
+                        <span class="hide-menu">User</span>
                     </a>
                 </li>
             </ul>

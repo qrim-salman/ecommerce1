@@ -15,6 +15,6 @@ class FrontendController extends Controller
 
 	public function makeView($view, $data = [])
 	{
-		return view($view, $data);
+		return view($this->view . $view, $data);
 	}
 }

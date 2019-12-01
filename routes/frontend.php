@@ -1,7 +1,5 @@
 <?php 
 
-Route::get('/', function () {
-    return view('welcome');
+Route::namespace("Frontend")->group(function() {
+	Route::get("/", "HomeController@getIndex")->name("frontend.home");
 });
-
-Route::view('/home', 'frontend.home')->middleware('auth');

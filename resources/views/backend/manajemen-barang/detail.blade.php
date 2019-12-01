@@ -16,7 +16,7 @@
 					{{ $model->description }}
 				</p> <hr>
 				<h3>Detail Lainnya</h3>
-				<div class="table-responsive">
+				<div class="table-responsive mb-3">
 					<table>
 						<tr>
 							<td>Kategori</td>
@@ -65,39 +65,36 @@
 						</tr>
 					</table>
 				</div> <hr>
+				<a href="{{ route('item-management.image', $model->id) }}" class="text-primary float-right"><u>Masukkan gambar barang</u></a>
 				<h3>Gambar Barang</h3>
-				<a href="{{ route('item-management.image', $model->id) }}" class="text-primary"><u>Masukkan gambar barang</u></a>
-			    <div class="container gallery-container">
-				    <div class="tz-gallery">
-				        <div class="row">
-				            <div class="col-sm-6 col-md-4">
-				                <a class="lightbox" href="{{ asset('images/placeholder-image-2.jpeg') }}">
-				                    <img src="{{ asset('images/placeholder-image-2.jpeg') }}" alt="Placeholder">
-				                </a>
-				            </div>
-				            <div class="col-sm-6 col-md-4">
-				                <a class="lightbox" href="{{ asset('images/placeholder-image-2.jpeg') }}">
-				                    <img src="{{ asset('images/placeholder-image-2.jpeg') }}" alt="Placeholder">
-				                </a>
-				            </div>
-				            <div class="col-sm-6 col-md-4">
-				                <a class="lightbox" href="{{ asset('images/placeholder-image-2.jpeg') }}">
-				                    <img src="{{ asset('images/placeholder-image-2.jpeg') }}" alt="Placeholder">
-				                </a>
-				            </div>
-				            <div class="col-sm-6 col-md-4">
-				                <a class="lightbox" href="{{ asset('images/placeholder-image-2.jpeg') }}">
-				                    <img src="{{ asset('images/placeholder-image-2.jpeg') }}" alt="Placeholder">
-				                </a>
-				            </div>
-				            <div class="col-sm-6 col-md-4">
-				                <a class="lightbox" href="{{ asset('images/placeholder-image-2.jpeg') }}">
-				                    <img src="{{ asset('images/placeholder-image-2.jpeg') }}" alt="Placeholder">
-				                </a>
-				            </div>
-				        </div>
-				    </div>
-				</div>
+				<div class="table-responsive">
+			    	<table class="table table-striped">
+			    		<tr>
+				    		<th>#</th>
+				    		<th>Image</th>
+				    		<th>Original Name</th>
+				    		<th>Action</th>
+				    	</tr>
+				    	@forelse($images as $image)
+						<tr>
+							<td>{{ $loop->iteration }}</td>
+							<td>
+								<img src='{{ url("/images/$image->resize_name") }}' alt="{{ $image->original_name }}">
+							</td>
+							<td>
+								{{ $image->original_name }}
+							</td>
+							<td>
+								<a href="{{ route('item-management.delete-image', $image->original_name) }}" class="btn btn-danger btn-sm mb-2">Remove {{ $image->original_name }}</a>
+							</td>
+						</tr>
+			            @empty
+						<tr>
+							<td colspan="4">Belum ada gambar untuk produk ini.</td>
+						</tr>
+			            @endforelse
+			    	</table>	
+	    		</div>
 			</div>
 		</div>
 	</div>

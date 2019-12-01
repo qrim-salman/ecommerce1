@@ -29,12 +29,12 @@ Route::group(['middleware' => ['web', 'admin']], function() {
 		Route::get('/detail/{id}', 'Backend\ItemManagement\ItemManagementController@getDetail')->name('item-management.detail');
 		Route::get('/edit/{id}', 'Backend\ItemManagement\ItemManagementController@getEdit')->name('item-management.edit');
 		Route::post('/edit/{id}', 'Backend\ItemManagement\ItemManagementController@postEdit')->name('item-management.update');
-		Route::post('/delete', 'Backend\ItemManagement\ItemManagementController@getDelete')->name('item-management.delete');
+		Route::post('/delete', 'Backend\ItemManagement\ItemManagementController@postDelete')->name('item-management.delete');
 		Route::get('/detail/{id}', 'Backend\ItemManagement\ItemManagementController@getDetail')->name('item-management.detail');
 		Route::post('/stok/{item_id}', 'Backend\ItemManagement\ItemManagementController@postStock')->name('item-management.stock');
 		Route::get('/image/{item_id}', 'Backend\ItemManagement\ItemManagementController@getImage')->name('item-management.image');
 		Route::post('/image/{item_id}', 'Backend\ItemManagement\ItemManagementController@postImage')->name('item-management.store-image');
-		Route::post('/image/delete', 'Backend\ItemManagement\ItemManagementController@postDeleteImage')->name('item-management.delete-image');
+		Route::get('/image/delete/{original_name}', 'Backend\ItemManagement\ItemManagementController@getDeleteImage')->name('item-management.delete-image');
 		
 		Route::group(['prefix' => 'kategori'], function() {
 			Route::get('/', 'Backend\ItemManagement\ItemCategoryController@getIndex')->name('category');

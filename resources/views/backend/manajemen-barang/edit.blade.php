@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-12">
 		<div class="card">
 			<div class="card-body">
 				<div class="card-title">
@@ -111,4 +111,10 @@
 		</div>
 	</div>
 </div>
+@endsection
+
+@section('js')
+<script>
+	CKEDITOR.replace( 'description' );
+</script>
 @endsection

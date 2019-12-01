@@ -93,9 +93,7 @@ class ItemManagementController extends BackendController
     {
         try {
             $data = Items::findOrFail($id);
-            $data->update($request->all(), [
-                "updated_by" => Auth::guard("admin")->user()->id,
-            ]);
+            $data->update($request->all(), ["updated_by" => Auth::guard("admin")->user()->id]);
 
             return redirect()->route('item-management')->with('success', 'Data barang berhasil diubah');
         } catch(\Exception $e) {
@@ -103,7 +101,7 @@ class ItemManagementController extends BackendController
         }
     }
 
-    public function getDelete(Request $request)
+    public function postDelete(Request $request)
     {
         if ($request->ajax()) {
             try {
@@ -135,6 +133,7 @@ class ItemManagementController extends BackendController
     {
         $data = Items::findOrFail($id);
         $stock = Stocks::where('item_id', $id)->get();
+        $images = ItemStatics::where('item_id', $id)->get();
 
         $sumStock = 0;
         foreach ($stock as $value) {
@@ -144,6 +143,7 @@ class ItemManagementController extends BackendController
         return $this->makeView("detail", [
             "model" => $data,
             "stock" => $sumStock,
+            "images" => $images,
         ]);
     }
 
@@ -217,7 +217,7 @@ class ItemManagementController extends BackendController
                     $originalName = basename($photo->getClientOriginalName());
 
                     Image::make($photo)
-                        ->resize(470, 360, function($constraints) {$constraints->aspectRatio();})
+                        ->resize(150, null, function($constraints) {$constraints->aspectRatio();})
                         ->save($this->photo_path.'/'.$resizeName);
 
                     $photo->move($this->photo_path, $saveName);
@@ -242,9 +242,30 @@ class ItemManagementController extends BackendController
         }
     }
 
-    public function postDeleteImage(Request $request)
+    public function getDeleteImage($saveName)
     {
-        
+        try {
+            $uploadedFile = ItemStatics::where('original_name', $saveName)->first();
+
+            $filePath = $this->photo_path.'/'.$uploadedFile->save_name;
+            $resizedFile = $this->photo_path.'/'.$uploadedFile->resize_name;
+
+            if (file_exists($filePath)) {
+                unlink($filePath);
+            }
+
+            if (file_exists($resizedFile)) {
+                unlink($resizedFile);
+            }
+
+            if (!empty($uploadedFile)) {
+                $uploadedFile->delete();
+            }
+
+            return back()->with('success', 'Gambar berhasil dihapus.');
+        } catch(\Exception $e) {
+            return back()->with('danger', $e->getMessage());
+        }
     }
 
 }

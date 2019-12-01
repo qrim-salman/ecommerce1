@@ -1,0 +1,7 @@
+Enhancement
+
+1. beri alert ketika akan hapus apapun
+
+Bug list
+
+1. updated_by tidak ikut terupdate ketika update barang

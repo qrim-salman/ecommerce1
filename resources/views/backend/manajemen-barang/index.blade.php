@@ -85,7 +85,7 @@
 	            	render: $.fn.dataTable.render.number( ',', '.', 2, 'Rp ' )
 	            },
 	            {
-	            	data: 'description', 
+	            	data: 'description',
 	            	name: 'description',
 	            	searchable: false,
 			        orderable:false,

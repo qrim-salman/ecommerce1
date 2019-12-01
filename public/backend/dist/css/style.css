@@ -10468,7 +10468,7 @@ File: scss
   text-align: center;
 }
 
-.container.gallery-container {
+.gallery-container {
     background-color: #fff;
     color: #35373a;
     min-height: 80vh;
@@ -10522,7 +10522,7 @@ File: scss
         padding: 0;
     }
 
-    .container.gallery-container {
+    .gallery-container {
         border-radius: 0;
     }
 }

@@ -3,11 +3,12 @@
 namespace App\Models\Backend;
 
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Items extends Model  
 {
 
-    
+    use Sluggable;
 
     /**
      * The database table used by the model.
@@ -15,6 +16,20 @@ class Items extends Model
      * @var string
      */
     protected $table = 'items';
+
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'name'
+            ]
+        ];
+    }
 
     /**
      * Attributes that should be mass-assignable.

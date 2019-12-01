@@ -1,0 +1,6 @@
+@include('frontend.layouts.header')
+@include('frontend.layouts.topbar')
+	@include('flash')
+	@yield('content')
+@include('frontend.layouts.bottombar')
+@include('frontend.layouts.footer')

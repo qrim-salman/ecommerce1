@@ -1,77 +1,63 @@
-@extends('layouts.app')
-
-@section('content')
+@include("frontend.layouts.header")
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+  <div class="row">
+    <div class="col-lg-6 col-xl-6 mx-auto">
+      <div class="card card-signin flex-row my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ __('Daftar') }}</h5>
+          <form class="form-signin" action="{{ route('register') }}" method="POST">
+            @csrf
+            <div class="form-label-group">
+              <input type="text" id="inputUserame" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+              <label for="inputUserame">{{ __('Username') }}</label>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+              @error('name')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
             </div>
+            <div class="form-label-group">
+              <input type="email" id="inputEmail" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+              <label for="inputEmail">{{ __('E-Mail') }}</label>
+
+              @error('email')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
+            </div>
+            
+            <hr>
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+              <label for="inputPassword">{{ __('Password') }}</label>
+
+              @error('password')
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                  </span>
+              @enderror
+            </div>
+            
+            <div class="form-label-group">
+              <input type="password" id="inputConfirmPassword" class="form-control" name="password_confirmation" required autocomplete="new-password">
+              <label for="inputConfirmPassword">{{ __('Konfirmasi Password') }}</label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">{{ __('Daftar') }}</button>
+            <a class="d-block text-center mt-2" href="{{ route('login') }}">{{ __('Masuk') }}</a>
+            <hr class="my-4">
+            <a href="{{ url('/auth/google') }}" class="btn btn-lg btn-google btn-block text-uppercase"><i class="fab fa-google mr-2"></i> {{ __('Daftar dengan Google') }}</a>
+            <a href="{{ url('/auth/facebook') }}" class="btn btn-lg btn-facebook btn-block text-uppercase"><i class="fab fa-facebook-f mr-2"></i> {{ __('Daftar dengan Facebook') }}</a>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-lg-6 col-xl-6 mx-auto">
+      <p class="text-center"><strong>@ Sukasukalo.com 2019</strong></p>
+    </div>
+  </div>
 </div>
-@endsection
+@include("frontend.layouts.footer")
