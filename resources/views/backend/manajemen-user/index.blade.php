@@ -42,7 +42,7 @@
                                 <th class="border-top-0">#</th>
                                 <th class="border-top-0">Nama</th>
                                 <th class="border-top-0">Email</th>
-                                <th class="border-top-0">Action</th>
+                                <!-- <th class="border-top-0">Action</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -108,7 +108,7 @@
 	            {data: 'DT_RowIndex', name: 'DT_RowIndex'},
 	            {data: 'name', name: 'name'},
 	            {data: 'email', name: 'email'},
-	            {data: 'action', name: 'action', orderable: false, searchable: false},
+	            // {data: 'action', name: 'action', orderable: false, searchable: false},
 	        ],
 	    });
 

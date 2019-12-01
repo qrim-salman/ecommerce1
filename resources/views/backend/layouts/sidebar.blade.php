@@ -34,7 +34,7 @@
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('user-management') }}" aria-expanded="false">
                         <i class="mdi mdi-account-network"></i>
-                        <span class="hide-menu">User</span>
+                        <span class="hide-menu">Admin & Customer</span>
                     </a>
                 </li>
             </ul>

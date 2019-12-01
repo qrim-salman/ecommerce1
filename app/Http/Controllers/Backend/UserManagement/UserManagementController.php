@@ -54,19 +54,19 @@ class UserManagementController extends BackendController
     		$dataCustomer = User::latest()->get();
     		return DataTables::of($dataCustomer)
     				->addIndexColumn()
-    				->addColumn('action', function($row) {
-    					$btnDetail = '<a href="" class="edit btn btn-info btn-sm" data-toggle="tooltip" data-placement="bottom" title="Detail"><i class="mdi mdi-account-card-details"></i></a>';
+    				// ->addColumn('action', function($row) {
+    				// 	$btnDetail = '<a href="" class="edit btn btn-info btn-sm" data-toggle="tooltip" data-placement="bottom" title="Detail"><i class="mdi mdi-account-card-details"></i></a>';
 
-                        $btnActivation = '';
-                        if ($row->is_active) {
-                            $btnActivation = '<a href="" class="deactivate btn btn-warning btn-sm" data-toggle="tooltip" data-placement="bottom" title="Nonaktifkan"><i class="mdi mdi-close"></i></a>';
-                        } else {
-                            $btnActivation = '<a href="" class="activate btn btn-success btn-sm" data-toggle="tooltip" data-placement="bottom" title="Aktifkan"><i class="mdi mdi-check"></i></a>';
-                        }
+        //                 $btnActivation = '';
+        //                 if ($row->is_active) {
+        //                     $btnActivation = '<a href="" class="deactivate btn btn-warning btn-sm" data-toggle="tooltip" data-placement="bottom" title="Nonaktifkan"><i class="mdi mdi-close"></i></a>';
+        //                 } else {
+        //                     $btnActivation = '<a href="" class="activate btn btn-success btn-sm" data-toggle="tooltip" data-placement="bottom" title="Aktifkan"><i class="mdi mdi-check"></i></a>';
+        //                 }
 
-    					return $btnDetail."&nbsp;".$btnActivation;
-    				})
-    				->rawColumns(['action'])
+    				// 	return $btnDetail."&nbsp;".$btnActivation;
+    				// })
+    				// ->rawColumns(['action'])
     				->make(true);
     	}
 

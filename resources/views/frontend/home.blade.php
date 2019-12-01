@@ -57,46 +57,46 @@
                             <div class="thumb-content">
                               <h4>Apple iPad</h4>
                               <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/headphone.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Sony Headphone</h4>
                               <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/macbook-air.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Macbook Air</h4>
                               <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/nikon.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Nikon DSLR</h4>
                               <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
@@ -106,53 +106,53 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/play-station.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Sony Play Station</h4>
                               <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/macbook-pro.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Macbook Pro</h4>
                               <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/speaker.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Bose Speaker</h4>
                               <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/galaxy.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Samsung S8</h4>
                               <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
@@ -162,53 +162,53 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/iphone.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Apple iPhone</h4>
                               <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/canon.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Canon DSLR</h4>
                               <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/pixel.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Google Pixel</h4>
                               <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/watch.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Apple Watch</h4>
                               <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
@@ -246,53 +246,53 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/ipad.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Apple iPad</h4>
                               <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/headphone.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Sony Headphone</h4>
                               <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/macbook-air.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Macbook Air</h4>
                               <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/nikon.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Nikon DSLR</h4>
                               <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
@@ -302,53 +302,53 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/play-station.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Sony Play Station</h4>
                               <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/macbook-pro.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Macbook Pro</h4>
                               <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/speaker.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Bose Speaker</h4>
                               <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/galaxy.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Samsung S8</h4>
                               <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
@@ -358,53 +358,53 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/iphone.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Apple iPhone</h4>
                               <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/canon.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Canon DSLR</h4>
                               <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/pixel.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Google Pixel</h4>
                               <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/watch.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Apple Watch</h4>
                               <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
@@ -442,53 +442,53 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/ipad.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Apple iPad</h4>
                               <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/headphone.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Sony Headphone</h4>
                               <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/macbook-air.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Macbook Air</h4>
                               <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/nikon.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Nikon DSLR</h4>
                               <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
@@ -498,53 +498,53 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/play-station.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Sony Play Station</h4>
                               <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/macbook-pro.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Macbook Pro</h4>
                               <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/speaker.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Bose Speaker</h4>
                               <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/galaxy.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Samsung S8</h4>
                               <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
@@ -554,53 +554,53 @@
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/iphone.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Apple iPhone</h4>
                               <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/canon.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Canon DSLR</h4>
                               <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/pixel.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Google Pixel</h4>
                               <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                           <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4/5</span>
+                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
                             <div class="img-box">
                               <img src="{{ asset('frontend/dist/images/products/watch.jpg') }}" class="img-responsive img-fluid" alt="">
                             </div>
                             <div class="thumb-content">
                               <h4>Apple Watch</h4>
                               <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
-                              <a href="#" class="btn">Detail</a>
+                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                             </div>
                           </div>
                         </div>

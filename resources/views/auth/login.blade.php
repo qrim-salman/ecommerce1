@@ -44,7 +44,8 @@
             @isset($url)
             @else
             <div class="form-group mt-3">
-              <a class="" href="{{ route('register') }}">{{ __('Belum punya akun ? daftar disini') }}</a><a class="float-right" href="#">{{ __('Lupa Password ?') }}</a>
+              <a class="" href="{{ route('register') }}">{{ __('Belum punya akun ? daftar disini') }}</a>
+              <!-- <a class="float-right" href="#">{{ __('Lupa Password ?') }}</a> -->
             </div>
             <hr class="my-4">
             <a href="{{ url('/auth/google') }}" class="btn btn-lg btn-google btn-block text-uppercase"><i class="fab fa-google mr-2"></i> {{ __('Masuk dengan Google') }}</a>

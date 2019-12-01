@@ -21,6 +21,6 @@ class ProductController extends FrontendController
 
     public function getDetail()
     {
-    	
+    	return $this->makeView("detail");
     }
 }
