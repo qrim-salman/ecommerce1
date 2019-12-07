@@ -17,10 +17,9 @@
       <li class="nav-item dropdown">
         <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Lainnya <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#" class="dropdown-item">Web Design</a></li>
-          <li><a href="#" class="dropdown-item">Web Development</a></li>
-          <li><a href="#" class="dropdown-item">Graphic Design</a></li>
-          <li><a href="#" class="dropdown-item">Digital Marketing</a></li>
+          @foreach ($categories as $item)
+          <li><a href="#" class="dropdown-item">{{$item->name}}</a></li>
+          @endforeach
         </ul>
       </li>
     </ul>

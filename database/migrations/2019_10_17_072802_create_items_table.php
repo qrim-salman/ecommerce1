@@ -29,6 +29,7 @@ class CreateItemsTable extends Migration
             $table->decimal('weight', 11, 2);
             $table->bigInteger('price');
             $table->boolean('status')->default(false);
+            $table->decimal('rates', 11, 2)->nullable();    
             $table->unsignedBigInteger('updated_by')->nullable();
             $table->foreign('updated_by')
                 ->references('id')

@@ -48,5 +48,4 @@ class ItemCategories extends Model
     {
         return $this->hasMany('App\Models\Backend\Items');
     }
-
 }
