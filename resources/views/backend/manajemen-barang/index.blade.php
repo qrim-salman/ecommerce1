@@ -8,7 +8,7 @@
 				<div class="card-title">
 					<h3 class="text-lighten">Jumlah Kategori Barang: <span class="text-primary">{{ $itemCategoryCount }}</span></h3>
 				</div>
-				<a href="{{ route('category') }}" class="text-primary"><i class="mdi mdi-eye"></i> Lihat Kategori Barang</a>
+				<a href="{{ route('category') }}" class="text-primary"><i class="mdi mdi-eye"></i> Lihat / Tambah Kategori Barang</a>
 			</div>
 		</div>
 	</div>
@@ -36,7 +36,7 @@
                                 <th class="border-top-0">Status</th>
                                 <th class="border-top-0">Harga</th>
                                 <th class="border-top-0">Deskripsi</th>
-                                <th class="border-top-0">Action</th>
+                                <th class="border-top-0" style="min-width: 100px;">Action</th>
                             </tr>
                         </thead>
                         <tbody>

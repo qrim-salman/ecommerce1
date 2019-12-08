@@ -74,7 +74,7 @@
 
 					<div class="form-group">
 						<label for="weight">Berat</label>
-						<input type="number" id="weight" name="weight" class="form-control @error('weight') is-invalid @enderror" value="{{ $model->weight }}" required>
+						<input type="number" step=".01" id="weight" name="weight" class="form-control @error('weight') is-invalid @enderror" value="{{ $model->weight }}" required>
 					
 						@error('weight')
                             <span class="invalid-feedback" role="alert">

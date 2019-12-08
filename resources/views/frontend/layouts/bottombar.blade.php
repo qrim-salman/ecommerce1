@@ -23,7 +23,7 @@
             <li> <a href="#"> My Orders </a></li>
           </ul>
         </aside>
-        <aside class="col-md">
+        <aside class="col-md col-6">
           <h6 class="title">Social</h6>
           <ul class="list-unstyled">
             <li><a href="#"> <i class="fab fa-facebook"></i> Facebook </a></li>
@@ -34,12 +34,8 @@
       </div> <!-- row.// -->
     </section>  <!-- footer-top.// -->
     <section class="footer-bottom row">
-      <div class="col-md-6">
-        <p class="text-muted"> © 2019 sukasukaLo </p>
-      </div>
-      <div class="col-md-6 text-md-right">
-        <span class="px-2">sukasukalo@gmail.com</span>
-        <span class="px-2">+879-332-9375</span>
+      <div class="col-md-12">
+        <p class="text-muted text-center">© 2019 sukasukaLo. All right reserved</p>
       </div>
     </section>
   </div><!-- //container -->

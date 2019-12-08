@@ -12,13 +12,13 @@
   <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
     <ul class="nav navbar-nav">
       <li class="nav-item active"><a href="#" class="nav-link">Beranda</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Action Figure</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Kosmetik</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">{{ $__two_first_categories[0]->name }}</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">{{ $__two_first_categories[1]->name }}</a></li>
       <li class="nav-item dropdown">
         <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Lainnya <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          @foreach ($categories as $item)
-          <li><a href="#" class="dropdown-item">{{$item->name}}</a></li>
+          @foreach ($__all_categories as $category)
+          <li><a href="#" class="dropdown-item">{{ $category->name }}</a></li>
           @endforeach
         </ul>
       </li>

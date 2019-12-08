@@ -18,21 +18,21 @@ class HomeController extends FrontendController
 
     public function getIndex()
     {   
-         $newest = DB::table('Items')
+        $newest = DB::table('Items')
                      ->select('name', 'price')
                      ->where('status', true)
                      ->orderBy('created_at', 'DESC')
                      ->limit(12)
                      ->get();
         
-         $rates = DB::table('Items')
+        $rates = DB::table('Items')
                      ->select('name', 'price')
                      ->where('status', true)
                      ->where('rates', '>=' ,'4.5')
                      ->limit(12)
                      ->get();
 
-         $favorite = DB::table('Items')
+        $favorite = DB::table('Items')
                        ->select('items.name', 'items.price')
                        ->join('Stocks', 'Stocks.id', '=' ,'items.id')
                        ->where('status', true)
@@ -40,19 +40,18 @@ class HomeController extends FrontendController
                        ->limit(12)
                        ->get();
 
-         $cheapest = DB::table('Items')
-                       ->select('name', 'price')
-                       ->where('status', true)
-                       ->orderBy('price', 'ASC')
-                       ->limit(12)
-                       ->get();
+        // $cheapest = DB::table('Items')
+        //                ->select('name', 'price')
+        //                ->where('status', true)
+        //                ->orderBy('price', 'ASC')
+        //                ->limit(12)
+        //                ->get();
 
-            $categories = DB::table('item_categories')
-                          ->select('name')
-                          ->whereNotIn('name',['Action Figure', 'Sparepart'])
-                          ->get();
-         return $this->makeView('home', compact('newest', 'rates', 'favorite', 'cheapest', 'categories')); 
-     
+        return $this->makeView('home', [
+          'newest' => $newest,
+          'rates' => $rates,
+          'favorite' => $favorite
+        ]); 
     }
     
 }

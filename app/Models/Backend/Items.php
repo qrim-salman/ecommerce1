@@ -61,7 +61,7 @@ class Items extends Model
 
     public function itemCategory()
     {
-        return $this->belongsTo('App\Models\Backend\itemCategories', 'category_id');
+        return $this->belongsTo('App\Models\Backend\ItemCategories', 'category_id');
     }
 
     public function stock()
