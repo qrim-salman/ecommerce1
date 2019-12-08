@@ -35,7 +35,7 @@
     </section>  <!-- footer-top.// -->
     <section class="footer-bottom row">
       <div class="col-md-12">
-        <p class="text-muted text-center">© 2019 sukasukaLo. All right reserved</p>
+        <p class="text-muted text-center">© {{ date('Y') }} sukasukaLo. All right reserved</p>
       </div>
     </section>
   </div><!-- //container -->
