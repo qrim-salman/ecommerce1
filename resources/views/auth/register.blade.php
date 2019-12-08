@@ -1,7 +1,7 @@
 @include("frontend.layouts.header")
 <div class="container">
   <div class="row">
-    <div class="col-lg-6 col-xl-6 mx-auto">
+    <div class="col-lg-5 col-xl-5 mx-auto">
       <div class="card card-signin flex-row my-5">
         <div class="card-body">
           <h5 class="card-title text-center">{{ __('Daftar') }}</h5>
@@ -46,9 +46,6 @@
             </div>
             <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">{{ __('Daftar') }}</button>
             <a class="d-block text-center mt-2" href="{{ route('login') }}">{{ __('Masuk') }}</a>
-            <hr class="my-4">
-            <a href="{{ url('/auth/google') }}" class="btn btn-lg btn-google btn-block text-uppercase"><i class="fab fa-google mr-2"></i> {{ __('Daftar dengan Google') }}</a>
-            <a href="{{ url('/auth/facebook') }}" class="btn btn-lg btn-facebook btn-block text-uppercase"><i class="fab fa-facebook-f mr-2"></i> {{ __('Daftar dengan Facebook') }}</a>
           </form>
         </div>
       </div>

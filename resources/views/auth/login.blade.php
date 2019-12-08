@@ -1,7 +1,7 @@
 @include("frontend.layouts.header")
 <div class="container">
   <div class="row">
-    <div class="col-lg-6 col-xl-6 mx-auto">
+    <div class="col-lg-5 col-xl-5 mx-auto">
       <div class="card card-signin flex-row my-5">
         <div class="card-body">
           <h5 class="card-title text-center">{{ __('Masuk') }}</h5>
@@ -47,9 +47,16 @@
               <a class="" href="{{ route('register') }}">{{ __('Belum punya akun ? daftar disini') }}</a>
               <!-- <a class="float-right" href="#">{{ __('Lupa Password ?') }}</a> -->
             </div>
-            <hr class="my-4">
-            <a href="{{ url('/auth/google') }}" class="btn btn-lg btn-google btn-block text-uppercase"><i class="fab fa-google mr-2"></i> {{ __('Masuk dengan Google') }}</a>
-            <a href="{{ url('/auth/facebook') }}" class="btn btn-lg btn-facebook btn-block text-uppercase"><i class="fab fa-facebook-f mr-2"></i> {{ __('Masuk dengan Facebook') }}</a>
+            <hr>
+            <p class="d-block text-center text-muted mt-2">Atau masuk dengan</p>
+            <div class="row">
+              <div class="col-6">
+                <a href="{{ url('/auth/google') }}" class="btn btn-google btn-block text-uppercase"><i class="fab fa-google"></i> {{ __('Google') }}</a>
+              </div>
+              <div class="col-6">
+                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook btn-block text-uppercase"><i class="fab fa-facebook-f"></i> {{ __('Facebook') }}</a>
+              </div>
+            </div>
             @endisset
           </form>
         </div>
