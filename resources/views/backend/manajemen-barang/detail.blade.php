@@ -13,7 +13,7 @@
 					<u>{{ $model->name }}</u>
 				</h1>
 				<p>
-					{{ $model->description }}
+					{!! $model->description !!}
 				</p> <hr>
 				<h3>Detail Lainnya</h3>
 				<div class="table-responsive mb-3">
