@@ -32,9 +32,12 @@ class FrontendController extends Controller
 	public function allCategories()
 	{
 		$data = $this->twoFirstCategories();
-		return  \DB::table('item_categories')
+		if(!empty($data)){
+			return  \DB::table('item_categories')
 					->select('name', 'slug')
 					->whereNotIn('name', [$data[0]->name, $data[1]->name])
-					->get();
+					->get();	
+			}
+		
 	}
 }

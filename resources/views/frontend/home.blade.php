@@ -37,33 +37,32 @@
             <h3 class="product-showcase-title bestseller">Rating tertinggi</h3>
             <div class="row mt-4">
               <div class="col-md-12">
-                <div id="myCarousel" class="carousel product-carousel slide" data-ride="carousel" data-interval="0">
+                <div id="myCarousel1" class="carousel product-carousel slide" data-ride="carousel" data-interval="0">
                   <!-- Carousel indicators -->
                   <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel1" data-slide-to="1"></li>
+                    <li data-target="#myCarousel1" data-slide-to="2"></li>
                   </ol>
                   <!-- Wrapper for carousel items -->
-                  <div class="carousel-inner">
+                  <div class="carousel-inner"> 
                     <div class="item carousel-item active">
                       <div class="row">
-                        {{--  @foreach ($rates as $item)
-                            
-                        @endforeach  --}}
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                          <div class="thumb-wrapper">
-                            <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
-                            <div class="img-box">
-                              <img src="{{ asset('frontend/dist/images/products/galaxy.jpg') }}" class="img-responsive img-fluid" alt="">
+                          @foreach ($rates as $item)
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                              <div class="thumb-wrapper">
+                                  <span class="star-rating"><i class="fas fa-star"></i>{{$item->rates}}</span>
+                                  <div class="img-box">
+                                    <img src="{{ asset('/images/'.$item->resize_name) }}" class="img-responsive img-fluid" alt="">
+                                  </div>
+                                  <div class="thumb-content">
+                                    <h4>{{$item->name}}</h4>
+                                    <p class="item-price"><span>Rp.{{number_format($item->price)}}</span></p>
+                                    <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
+                                  </div>
+                                </div>
                             </div>
-                            <div class="thumb-content">
-                              <h4>Samsung S8</h4>
-                              <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
-                              <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
-                            </div>
-                          </div>
-                        </div>
+                            @endforeach
                       </div>
                     </div>
                     <div class="item carousel-item">
@@ -102,10 +101,10 @@
                       </div>
                   </div>
                   <!-- Carousel controls -->
-                  <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <a class="carousel-control left carousel-control-prev" href="#myCarousel1" data-slide="prev">
                     <i class="fas fa-angle-left"></i>
                   </a>
-                  <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                  <a class="carousel-control right carousel-control-next" href="#myCarousel1" data-slide="next">
                     <i class="fas fa-angle-right"></i>
                   </a>
                 </div>
@@ -119,33 +118,33 @@
               <h3 class="product-showcase-title bestseller">Harga Paling rendah</h3>
               <div class="row mt-4">
                 <div class="col-md-12">
-                  <div id="myCarousel" class="carousel product-carousel slide" data-ride="carousel" data-interval="0">
+                  <div id="myCarousel2" class="carousel product-carousel slide" data-ride="carousel" data-interval="0">
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel2" data-slide-to="1"></li>
+                      <li data-target="#myCarousel2" data-slide-to="2"></li>
                     </ol>
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                       <div class="item carousel-item active">
                         <div class="row">
-                          {{--  @foreach ($cheapest as $item)
-                              
-                          @endforeach  --}}
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                            <div class="thumb-wrapper">
-                              <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
-                              <div class="img-box">
-                                <img src="{{ asset('frontend/dist/images/products/galaxy.jpg') }}" class="img-responsive img-fluid" alt="">
-                              </div>
-                              <div class="thumb-content">
-                                <h4>Samsung S8</h4>
-                                <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
-                                <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
+                           @foreach ($cheapest as $item)
+                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                              <div class="thumb-wrapper">
+                                <span class="star-rating"><i class="fas fa-star"></i> {{$item->rates}}</span>
+                                <div class="img-box">
+                                  <img src="{{ asset('/images/'.$item->resize_name) }}" class="img-responsive img-fluid" alt="">
+                                </div>
+                                <div class="thumb-content">
+                                  <h4>{{$item->name}}</h4>
+                                  <p class="item-price">Rp. {{number_format($item->price)}}</p>
+                                  <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
+                                </div>
                               </div>
                             </div>
-                          </div>
+                          @endforeach 
+                        
                         </div>
                       </div>
                       <div class="item carousel-item">
@@ -184,10 +183,10 @@
                         </div>
                     </div>
                     <!-- Carousel controls -->
-                    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <a class="carousel-control left carousel-control-prev" href="#myCarousel2" data-slide="prev">
                       <i class="fas fa-angle-left"></i>
                     </a>
-                    <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                    <a class="carousel-control right carousel-control-next" href="#myCarousel2" data-slide="next">
                       <i class="fas fa-angle-right"></i>
                     </a>
                   </div>
@@ -201,33 +200,33 @@
               <h3 class="product-showcase-title bestseller">Produk Terbaru</h3>
               <div class="row mt-4">
                 <div class="col-md-12">
-                  <div id="myCarousel" class="carousel product-carousel slide" data-ride="carousel" data-interval="0">
+                  <div id="myCarousel3" class="carousel product-carousel slide" data-ride="carousel" data-interval="0">
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel3" data-slide-to="1"></li>
+                      <li data-target="#myCarousel3" data-slide-to="2"></li>
                     </ol>
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                       <div class="item carousel-item active">
                         <div class="row">
                           @foreach ($newest as $item)
-                              
-                          @endforeach
                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                            <div class="thumb-wrapper">
-                              <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
-                              <div class="img-box">
-                                <img src="{{ asset('frontend/dist/images/products/galaxy.jpg') }}" class="img-responsive img-fluid" alt="">
-                              </div>
-                              <div class="thumb-content">
-                                <h4>Samsung S8</h4>
-                                <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
-                                <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
+                              <div class="thumb-wrapper">
+                                <span class="star-rating"><i class="fas fa-star"></i>{{$item->rates}}</span>
+                                <div class="img-box">
+                                  <img src="{{ asset('/images/'.$item->resize_name) }}" class="img-responsive img-fluid" alt="">
+                                </div>
+                                <div class="thumb-content">
+                                  <h4>{{$item->name}}</h4>
+                                  <p class="item-price">Rp {{number_format($item->price)}}</p>
+                                  <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
+                                </div>
                               </div>
                             </div>
-                          </div>
+                          @endforeach
+                         
                         </div>
                       </div>
                       <div class="item carousel-item">
@@ -266,10 +265,10 @@
                         </div>
                     </div>
                     <!-- Carousel controls -->
-                    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <a class="carousel-control left carousel-control-prev" href="#myCarousel3" data-slide="prev">
                       <i class="fas fa-angle-left"></i>
                     </a>
-                    <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                    <a class="carousel-control right carousel-control-next" href="#myCarousel3" data-slide="next">
                       <i class="fas fa-angle-right"></i>
                     </a>
                   </div>
@@ -283,33 +282,33 @@
               <h3 class="product-showcase-title bestseller">Produk Terlaris</h3>
               <div class="row mt-4">
                 <div class="col-md-12">
-                  <div id="myCarousel" class="carousel product-carousel slide" data-ride="carousel" data-interval="0">
+                  <div id="myCarousel4" class="carousel product-carousel slide" data-ride="carousel" data-interval="0">
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel4" data-slide-to="1"></li>
+                      <li data-target="#myCarousel4" data-slide-to="2"></li>
                     </ol>
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                       <div class="item carousel-item active">
                         <div class="row">
-                          {{--  @foreach ($favorite as $item)
-                              
-                          @endforeach  --}}
-                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                          @foreach ($favorite as $item)
+                               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                             <div class="thumb-wrapper">
-                              <span class="star-rating"><i class="fas fa-star"></i> 4.5</span>
+                              <span class="star-rating"><i class="fas fa-star"></i>{{$item->rates}}</span>
                               <div class="img-box">
-                                <img src="{{ asset('frontend/dist/images/products/galaxy.jpg') }}" class="img-responsive img-fluid" alt="">
+                                <img src="{{ asset('/images/'.$item->resize_name) }}" class="img-responsive img-fluid" alt="">
                               </div>
                               <div class="thumb-content">
-                                <h4>Samsung S8</h4>
-                                <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                                <h4>{{$item->name}}</h4>
+                                <p class="item-price">Rp {{number_format($item->price)}}</p>
                                 <a href="{{ route('frontend.product.detail') }}" class="btn">Detail</a>
                               </div>
                             </div>
                           </div>
+                          @endforeach  
+                         
                         </div>
                       </div>
                       <div class="item carousel-item">
@@ -348,10 +347,10 @@
                         </div>
                     </div>
                     <!-- Carousel controls -->
-                    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <a class="carousel-control left carousel-control-prev" href="#myCarousel4" data-slide="prev">
                       <i class="fas fa-angle-left"></i>
                     </a>
-                    <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                    <a class="carousel-control right carousel-control-next" href="#myCarousel4" data-slide="next">
                       <i class="fas fa-angle-right"></i>
                     </a>
                   </div>
