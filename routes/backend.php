@@ -45,5 +45,11 @@ Route::group(['middleware' => ['web', 'admin']], function() {
 			Route::post('/edit/{id}', 'Backend\ItemManagement\ItemCategoryController@postEdit')->name('category.update');
 			Route::post('/delete', 'Backend\ItemManagement\ItemCategoryController@getDelete')->name('category.delete');
 		});
+
+		
+		Route::group(['prefix' => 'laporan'], function() {
+			Route::get('/', 'Backend\ReportManagement\ReportManagementController@getIndex')->name('report-management');
+		});
+		
 	});
 });

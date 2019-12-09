@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-light">
   <div class="navbar-header d-flex col">
-    <a class="navbar-brand" href="#"><i class="fas fa-cube"></i>Brand<b>Name</b></a>
+    <a class="navbar-brand" href="{{route('frontend.home')}}"><img src="{{asset('/frontend/assets/icon350.png')}}" height="50px" alt=""></a>
     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
     <span class="navbar-toggler-icon"></span>
     <span class="icon-bar"></span>

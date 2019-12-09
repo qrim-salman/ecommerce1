@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('report-management')}}" aria-expanded="false">
                         <i class="mdi mdi-format-list-bulleted"></i>
                         <span class="hide-menu">Laporan</span>
                     </a>
