@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Backend\Dashboard;
 
+use DB;
 use Illuminate\Http\Request;
 use App\user;
-use App\Models\Backend\items;
-use App\Models\Backend\stocks;
-// use App\Models\Backend\stocks
+use App\Models\Backend\Items;
+use App\Models\Backend\Stocks;
 use Carbon\Carbon;
 use App\Http\Controllers\BackendController;
 
@@ -26,8 +26,11 @@ class DashboardController extends BackendController
         $datachart  = array(1, 2, 3, 4, 5);
 
         return $this->makeView("index",[
-        'users' => user::all(),
-        'usersMonth' => user::whereMonth("created_at", $month)->get(),
+        'users' => DB::table('users')
+                    ->get(),
+        'usersMonth' => DB::tale('users')
+                        ->whereMonth("created_at", $month)
+                        ->get(),
         'usersYear' => user::whereYear("created_at", $year)->get(),
         'items' =>  items::all(),
         'itemsMonth' => items::whereMonth('created_at', $month)->get(), 
