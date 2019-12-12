@@ -22,13 +22,13 @@ class DashboardController extends BackendController
     {
         $month = Carbon::now()->format('m');
         $year = Carbon::now()->year;
-        $monthchart = array('Jan', 'Feb', 'Mar', 'Apr', 'May');
-        $datachart  = array(1, 2, 3, 4, 5);
+        $monthchart = array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
+        $datachart  = array(1, 2, 3, 4, 5, 8, 9, 4,12,4,22,1);
 
         return $this->makeView("index",[
         'users' => DB::table('users')
                     ->get(),
-        'usersMonth' => DB::tale('users')
+        'usersMonth' => DB::table('users')
                         ->whereMonth("created_at", $month)
                         ->get(),
         'usersYear' => user::whereYear("created_at", $year)->get(),

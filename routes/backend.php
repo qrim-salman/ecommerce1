@@ -49,6 +49,7 @@ Route::group(['middleware' => ['web', 'admin']], function() {
 		
 		Route::group(['prefix' => 'laporan'], function() {
 			Route::get('/', 'Backend\ReportManagement\ReportManagementController@getIndex')->name('report-management');
+			Route::post('/' ,'Backend\ReportManagement\ReportManagementController@postSearch')->name('report-management.post-search');
 		});
 		
 	});
