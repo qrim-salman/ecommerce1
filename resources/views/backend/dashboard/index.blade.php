@@ -8,7 +8,7 @@
 					<div class="card-title">
 						<h3 class="text-primary">Welcome to Sukasukalo.com Admin Console !</h3><br><br>
 					</div>
-					<h4 class="card-title">Transaksi terjadi</h4>
+					<h4 class="card-title text-center">Transaksi terjadi</h4>
 					<canvas id="canvas"></canvas>
 				</div>
 			</div>
@@ -22,6 +22,7 @@
 				<div class="card">  
 					<div class="card-body">
 						<h4 class="card-title m-b-0 text-center">Users</h4>
+						<hr>
 						<h2 class="font-light text-center">{{count($users)}}</h2>
 						<div class="m-t-30">
 							<div class="row text-center">
@@ -48,9 +49,10 @@
 		<div class="card">
 			<div class="card-body">
 				<h5 class="card-title m-b-5 text-center">Total Barang</h5>
+				<hr>
 				<h3 class="font-light text-center">{{count($items)}}</h3>
 				<div class="m-t-20 text-center">
-					<a href="" class="btn btn-primary">Detail</a>
+					<a href="{{route('item-management')}}" class="btn btn-primary">Detail</a>
 				</div>
 			</div>
 		</div>
@@ -59,6 +61,7 @@
 		<div class="card">
 			<div class="card-body">
 				<h5 class="card-title m-b-5 text-center">Barang masuk bulan ini</h5>
+				<hr>
 				<h3 class="font-light text-center">{{count($itemsMonth)}}</h3>
 				<div class="m-t-20 text-center">
 					<a href="" class="btn btn-primary">Detail</a>
@@ -70,6 +73,7 @@
 		<div class="card">
 			<div class="card-body">
 				<h5 class="card-title m-b-5 text-center">Stok masuk bulan ini</h5>
+				<hr>
 				<h3 class="font-light text-center">{{$stocksMonth}}</h3>
 				<div class="m-t-20 text-center">
 					<a href="" class="btn btn-primary">Detail</a>
@@ -85,6 +89,7 @@
 				<div class="card">  
 					<div class="card-body">
 						<h4 class="card-title m-b-0 text-center">Transaksi</h4>
+						<hr>
 						<h2 class="font-light text-center">0</h2>
 						<div class="m-t-30">
 							<div class="row text-center">
