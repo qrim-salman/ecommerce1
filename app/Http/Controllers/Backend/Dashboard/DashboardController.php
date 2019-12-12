@@ -31,7 +31,9 @@ class DashboardController extends BackendController
         'usersMonth' => DB::table('users')
                         ->whereMonth("created_at", $month)
                         ->get(),
-        'usersYear' => user::whereYear("created_at", $year)->get(),
+        'usersYear' => DB::table('users')
+                        ->whereYear("created_at", $year)
+                        ->get(),
         'items' =>  items::all(),
         'itemsMonth' => items::whereMonth('created_at', $month)->get(), 
         'stocksMonth' => stocks::whereMonth('created_at', $month)->sum('qty'),
